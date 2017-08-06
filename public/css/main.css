@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+body {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row:nth-child(even) div{
+    background-color: #f5f5f5;
+}
+.row:nth-child(odd) div{
+    background-color: #ffffff;
+}
+
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+#app div.row.row-eq-height > div.ranks {
+    font-size: 42px;
+    font-weight: 900;
+    padding: 0;
+    text-align: center;
+}
+#app div.row.row-eq-height > div.infos {
+    padding: 10px 0 0 0;
+}
+
+#app div.row.row-eq-height > div.infos > a {
+    font-size: 22px;
+    color: #666666;
+    position: relative;
+    top: 8px;
+}
+
+#app div.row.row-eq-height > div.votes > span {
+    font-size: 42px;
+}
+
+#app div.row.row-eq-height.headers > div {
+    font-size: 22px;
+    font-weight: 700;
+    padding: inherit;
+}
+
+#loader{
+    z-index:999999;
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(../img/loader.gif) 50% 50% no-repeat rgba(0,0,0,0.3);
+}
